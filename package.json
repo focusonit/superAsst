@@ -1,0 +1,30 @@
+{
+  "name": "superasst",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Educational Super-agent personal-assistant demo (Router + Workers). Inspired by DeepSeek Super-agent design; not affiliated with DeepSeek.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node server/run-api.mjs",
+    "dev:api:noenv": "node server/deepseek-api.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "dev:full": "node server/run-api.mjs & vite"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.5"
+  }
+}
